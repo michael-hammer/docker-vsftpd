@@ -1,7 +1,10 @@
-odiobill/vsftpd
-===============
+michael-hammer/vsftpd
+=====================
 
-Very light **vsftpd** installation based on *Debian*.
+Docker image is based on [Odiobill/docker.vsftpd][docker.vsftpd] which is a very light **vsftpd** installation based on *Debian*.
+
+In contradition this image is designed for {{{anonymous}}} access and to data volume is exported.
+
 
 By design, it will only run the **vsftpd** executable, exposing the FTP standard port and exporting */etc* as a volume for both the *configuration* files and the *local users* database, allowing you to add any account. It is very handy when you want to provide FTP access to the content of some website from another container, importing its volumes.
 
